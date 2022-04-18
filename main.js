@@ -56,12 +56,14 @@ function toggleNav() {
 
 hambt.addEventListener('click', toggleNav)
 const introImgs = document.querySelector('.intro_imgs_ctnr')
+const paperWorkApe = document.querySelector('.paperwork_ape')
 
 let windowPosition;
 document.body.onscroll = function() {
     windowPosition = window.pageYOffset;
 
-    introImgs.style.transform = 'translateY(' + windowPosition / 8 + 'px)';
+    introImgs.style.transform = 'translateY(' + windowPosition / 10 + 'px)';
+    paperWorkApe.style.transform = 'translateY(calc(' + windowPosition / 6 + 'px - clamp(10rem, 40vw, 20rem)))';
 
     if(showingNav == true) {
         toggleNav()
