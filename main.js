@@ -63,7 +63,7 @@ document.body.onscroll = function() {
     windowPosition = window.pageYOffset;
 
     introImgs.style.transform = 'translateY(' + windowPosition / 10 + 'px)';
-    paperWorkApe.style.transform = 'translateY(calc(' + windowPosition / 6 + 'px - clamp(10rem, 40vw, 20rem)))';
+    paperWorkApe.style.transform = 'translateY(calc(' + windowPosition / 6 + 'px - 15rem))';
 
     if(showingNav == true) {
         toggleNav()
